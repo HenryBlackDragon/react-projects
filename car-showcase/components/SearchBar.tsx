@@ -53,7 +53,7 @@ const SearchBar = () => {
 
 		const newPathname = `${window.location.pathname}?${searchParams.toString()}`
 
-		router.push(newPathname)
+		router.push(newPathname, { scroll: false })
 	}
 
 	return (
@@ -81,7 +81,7 @@ const SearchBar = () => {
 					placeholder="Tiguan"
 					className="searchbar__input"
 				/>
-				<SearchButton otherClasses="sm:hideen" />
+				<SearchButton otherClasses="sm:hidden" />
 			</div>
 			<SearchButton otherClasses="max-sm:hideen" />
 		</form>
