@@ -55,3 +55,9 @@ export interface MovieDetailsScreenProps {
 	navigation: any
 	route: any
 }
+
+export interface SeetBookingScreenProps {
+	navigation: any
+	route: any
+}
+
