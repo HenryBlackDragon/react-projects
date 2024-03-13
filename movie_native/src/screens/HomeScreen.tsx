@@ -1,27 +1,25 @@
 import React, {useEffect, useState} from 'react'
 import {
-	Text,
-	View,
-	StyleSheet,
-	TouchableOpacity,
+	ActivityIndicator,
 	Dimensions,
+	FlatList,
 	ScrollView,
 	StatusBar,
-	ActivityIndicator,
-	FlatList
+	StyleSheet,
+	View
 } from 'react-native'
-import {COLORS, SPACING} from '../theme/theme'
 import {
-	upcomingMovies,
+	baseImagePath,
 	nowPlayingMovies,
 	popularMovies,
-	baseImagePath
+	upcomingMovies
 } from '../api/apicalls'
-import InputHeader from '../components/InputHeader'
-import {HomeScreenProps} from '../types'
 import CategoryHeader from '../components/CategoryHeader'
-import SubMovieCard from '../components/SubMovieCard'
+import InputHeader from '../components/InputHeader'
 import MovieCard from '../components/MovieCard'
+import SubMovieCard from '../components/SubMovieCard'
+import {COLORS, SPACING} from '../theme/theme'
+import {HomeScreenProps} from '../types'
 
 const {width, height} = Dimensions.get('window')
 
@@ -121,6 +119,7 @@ const HomeScreen = ({navigation}: HomeScreenProps) => {
 					decelerationRate={0}
 					contentContainerStyle={styles.containerGap36}
 					bounces={false}
+					showsHorizontalScrollIndicator={false}
 					snapToInterval={width * 0.7 + SPACING.space_36}
 					renderItem={({item, index}) => {
 						return !item.original_title ? (
@@ -155,6 +154,7 @@ const HomeScreen = ({navigation}: HomeScreenProps) => {
 					horizontal
 					contentContainerStyle={styles.containerGap36}
 					bounces={false}
+					showsHorizontalScrollIndicator={false}
 					renderItem={({item, index}) => (
 						<SubMovieCard
 							shouldMarginatedAtEnd={true}
@@ -178,6 +178,7 @@ const HomeScreen = ({navigation}: HomeScreenProps) => {
 					horizontal
 					contentContainerStyle={styles.containerGap36}
 					bounces={false}
+					showsHorizontalScrollIndicator={false}
 					renderItem={({item, index}) => (
 						<SubMovieCard
 							shouldMarginatedAtEnd={true}

@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {StyleSheet, Text, TextInput, TouchableOpacity, View} from 'react-native'
+import {StyleSheet, TextInput, TouchableOpacity, View} from 'react-native'
 import {
 	BORDERRADIUS,
 	COLORS,
@@ -7,8 +7,8 @@ import {
 	FONTSIZE,
 	SPACING
 } from '../theme/theme'
-import CustomIcon from './CustomIcon'
 import {InputHeaderrProps} from '../types'
+import CustomIcon from './CustomIcon'
 
 const InputHeader = ({searchFunction}: InputHeaderrProps) => {
 	const [searchText, setSearchText] = useState<string>('')

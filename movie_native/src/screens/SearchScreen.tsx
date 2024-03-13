@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import React, {useState} from 'react'
 import {Dimensions, FlatList, StatusBar, StyleSheet, View} from 'react-native'
 import {baseImagePath, searchMovies} from '../api/apicalls'
 import InputHeader from '../components/InputHeader'
@@ -77,3 +77,5 @@ const styles = StyleSheet.create({
 		alignItems: 'center'
 	}
 })
+
+export default SearchScreen

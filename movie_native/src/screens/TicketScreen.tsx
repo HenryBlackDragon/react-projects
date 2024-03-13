@@ -1,18 +1,18 @@
-import * as React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import React from 'react'
+import {StyleSheet, Text, View} from 'react-native'
 
-interface TicketScreenProps { }
+interface TicketScreenProps {}
 
 const TicketScreen = (props: TicketScreenProps) => {
-    return (
-        <View style={styles.container}>
-            <Text>TicketScreen</Text>
-        </View>
-    );
-};
+	return (
+		<View style={styles.container}>
+			<Text>TicketScreen</Text>
+		</View>
+	)
+}
 
 const styles = StyleSheet.create({
-    container: {}
-});
+	container: {}
+})
 
-export default TicketScreen;
+export default TicketScreen

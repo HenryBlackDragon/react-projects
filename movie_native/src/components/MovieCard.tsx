@@ -1,5 +1,5 @@
 import React from 'react'
-import {Text, View, StyleSheet, TouchableOpacity, Image} from 'react-native'
+import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native'
 import {
 	BORDERRADIUS,
 	COLORS,

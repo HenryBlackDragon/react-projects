@@ -21,7 +21,7 @@ export interface MovieCardProps {
 	genre: Array<any>
 	vote_average: number
 	vote_count: number
-	cardFunction: any
+	cardFunction: () => void
 }
 
 export interface SubMovieCardProps {
@@ -32,5 +32,26 @@ export interface SubMovieCardProps {
 	isLast?: boolean
 	cardWidth: number
 	shouldMarginatedAround?: boolean
-	cardFunction: any
+	cardFunction: () => void
+}
+
+export interface CastCardProps {
+	imagePath: string
+	title: string
+	shouldMarginatedAtEnd: boolean
+	isFirst?: boolean
+	isLast?: boolean
+	cardWidth: number
+	subtitle: string
+}
+
+export interface AppHeaderProps {
+	action: () => void
+	name: string
+	header: string
+}
+
+export interface MovieDetailsScreenProps {
+	navigation: any
+	route: any
 }

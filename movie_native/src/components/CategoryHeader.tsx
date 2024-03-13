@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import {StyleSheet, Text} from 'react-native'
 import {COLORS, FONTFAMILY, FONTSIZE, SPACING} from '../theme/theme'
 import {CategoryHeaderProps} from '../types'

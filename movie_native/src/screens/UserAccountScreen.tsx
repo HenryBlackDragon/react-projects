@@ -1,18 +1,18 @@
-import * as React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import React from 'react'
+import {StyleSheet, Text, View} from 'react-native'
 
-interface UserAccountScreenProps { }
+interface UserAccountScreenProps {}
 
 const UserAccountScreen = (props: UserAccountScreenProps) => {
-    return (
-        <View style={styles.container}>
-            <Text>UserAccountScreen</Text>
-        </View>
-    );
-};
+	return (
+		<View style={styles.container}>
+			<Text>UserAccountScreen</Text>
+		</View>
+	)
+}
 
 const styles = StyleSheet.create({
-    container: {}
-});
+	container: {}
+})
 
-export default UserAccountScreen;
+export default UserAccountScreen
