@@ -5,7 +5,6 @@ import CustomIcon from '../components/CustomIcon'
 import HomeScreen from '../screens/HomeScreen'
 import SearchScreen from '../screens/SearchScreen'
 import TicketScreen from '../screens/TicketScreen'
-import UserAccountScreen from '../screens/UserAccountScreen'
 import {COLORS, FONTSIZE, SPACING} from '../theme/theme'
 
 const Tab = createBottomTabNavigator()
@@ -76,26 +75,6 @@ const TabNavigator = () => {
 								]}>
 								<CustomIcon
 									name="ticket"
-									color={COLORS.White}
-									size={FONTSIZE.size_30}></CustomIcon>
-							</View>
-						)
-					}
-				}}></Tab.Screen>
-			<Tab.Screen
-				name="User"
-				component={UserAccountScreen}
-				options={{
-					tabBarShowLabel: false,
-					tabBarIcon: ({focused, color, size}) => {
-						return (
-							<View
-								style={[
-									styles.activeTabBackground,
-									focused ? {backgroundColor: COLORS.Orange} : {}
-								]}>
-								<CustomIcon
-									name="user"
 									color={COLORS.White}
 									size={FONTSIZE.size_30}></CustomIcon>
 							</View>

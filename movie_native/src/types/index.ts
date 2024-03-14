@@ -61,3 +61,7 @@ export interface SeetBookingScreenProps {
 	route: any
 }
 
+export interface TicketScreenProps {
+	navigation: any
+	route: any
+}
